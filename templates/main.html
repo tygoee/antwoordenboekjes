@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <style>
+      .fieldset-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      fieldset {
+        flex: 1;
+      }
+
+      .double-fieldset {
+        flex: 2;
+        display: flex;
+      }
+
+      .double-fieldset-column {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fieldset-container">
+      <fieldset>
+        <legend>Menu</legend>
+
+        <label for="zoek-op">Zoek op</label>
+        <br />
+        <input type="text" id="zoek-op" placeholder="Zoeken..." />
+        <br /><br />
+
+        <label for="sorteer-op">Sorteer op</label>
+        <span>&nbsp;</span>
+        <select name="sorteer-op" id="sorteer-op">
+          <option value="populariteit">Populariteit</option>
+          <option value="titel">Titel A-Z</option>
+          <option value="likes">Likes</option>
+          <option value="datum">Datum</option>
+        </select>
+
+        <br /><br />
+        <input type="button" id="antw-insturen" value="Antwoorden insturen" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Niveau</legend>
+        <div>
+          <input type="checkbox" name="niveau" id="vwo" value="vwo" />
+          <label for="vwo">vwo</label>
+        </div>
+        <div>
+          <input type="checkbox" name="niveau" id="havo" value="havo" />
+          <label for="havo">havo</label>
+        </div>
+        <div>
+          <input type="checkbox" name="niveau" id="havo-vwo" value="havo-vwo" />
+          <label for="havo-vwo">havo/vwo</label>
+        </div>
+        <div>
+          <input type="checkbox" name="niveau" id="vmbo-havo" value="vmbo-havo" />
+          <label for="vmbo-havo">vmbo/havo</label>
+        </div>
+        <div>
+          <input type="checkbox" name="niveau" id="vmbo" value="vmbo" />
+          <label for="vmbo">vmbo</label>
+        </div>
+        <div>
+          <input type="checkbox" name="niveau" id="anderniveau" value="anderniveau" />
+          <label for="anderniveau">anders</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Leerjaar</legend>
+        <div>
+          <input type="checkbox" name="leerjaar" id="klas-1" value="klas-1" />
+          <label for="klas-1">1e klas</label>
+        </div>
+        <div>
+          <input type="checkbox" name="leerjaar" id="klas-2" value="klas-2" />
+          <label for="klas-2">2e klas</label>
+        </div>
+        <div>
+          <input type="checkbox" name="leerjaar" id="klas-3" value="klas-3" />
+          <label for="klas-3">3e klas</label>
+        </div>
+        <div>
+          <input type="checkbox" name="leerjaar" id="klas-4" value="klas-4" />
+          <label for="klas-4">4e klas</label>
+        </div>
+        <div>
+          <input type="checkbox" name="leerjaar" id="klas-5" value="klas-5" />
+          <label for="klas-5">5e klas</label>
+        </div>
+        <div>
+          <input type="checkbox" name="leerjaar" id="klas-6" value="klas-6" />
+          <label for="klas-6">6e klas</label>
+        </div>
+        <div>
+          <input type="checkbox" name="leerjaar" id="andereklas" value="andereklas" />
+          <label for="andereklas">anders</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="vak double-fieldset">
+        <legend>Vak</legend>
+        <div class="vakc double-fieldset-column">
+          <div>
+            <input type="checkbox" name="vak" id="aardrijkskunde" value="aardrijkskunde" />
+            <label for="aardrijkskunde">Aardrijkskunde</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="biologie" value="biologie" />
+            <label for="biologie">Biologie</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="duits" value="duits" />
+            <label for="duits">Duits</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="economie" value="economie" />
+            <label for="economie">Economie</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="engels" value="engels" />
+            <label for="engels">Engels</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="frans" value="frans" />
+            <label for="frans">Frans</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="geschiedenis" value="geschiedenis" />
+            <label for="geschiedenis">Geschiedenis</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="godsdienst" value="godsdienst" />
+            <label for="godsdienst">Godsdienst</label>
+          </div>
+        </div>
+        <div class="vakc double-fieldset-column">
+          <div>
+            <input type="checkbox" name="vak" id="grieks" value="grieks" />
+            <label for="grieks">Grieks</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="kunstvakken" value="kunstvakken" />
+            <label for="kunstvakken">Kunstvakken</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="latijn" value="latijn" />
+            <label for="latijn">Latijn</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="natuurkunde" value="natuurkunde" />
+            <label for="natuurkunde">Natuurkunde</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="nederlands" value="nederlands" />
+            <label for="nederlands">Nederlands</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="scheikunde" value="scheikunde" />
+            <label for="scheikunde">Scheikunde</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="wiskunde" value="wiskunde" />
+            <label for="wiskunde">Wiskunde</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vak" id="andervak" value="andervak" />
+            <label for="andervak">Ander vak</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Methode</legend>
+        <i>Selecteer eerst een vak</i>
+      </fieldset>
+    </div>
+
+    <!-- prettier-ignore -->
+    <script id="vakken" type="application/json">{{ vakken }}</script>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
