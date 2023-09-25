@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fieldset-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+fieldset {
+  background-color: #f3f3f3;
+  flex: 1;
+  max-width: 500px;
+  padding: 16px;
+}
+
+.double-fieldset {
+  flex: 2;
+  display: flex;
+}
+
+.double-fieldset-column {
+  flex: 1;
+}
+.legend {
+  margin-bottom: 0px;
+  margin-left: 16px;
+}
