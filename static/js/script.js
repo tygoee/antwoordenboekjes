@@ -10,10 +10,6 @@ let checkboxes = document.querySelectorAll('input[type="checkbox"]');
 // it into my backend so i can use vakken.text
 vakken = JSON.parse(htmlDecode(vakken.text));
 
-for (const vak in vakken) {
-  console.log(vakken[vak]);
-}
-
 // Define the onchange event handler function
 function handleChange(checkbox) {
   checked = checkbox.checked ? "checked" : "unchecked";

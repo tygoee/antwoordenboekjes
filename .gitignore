@@ -31,5 +31,6 @@
 *.out
 *.app
 
-# Documents
+# Documents and csv files
 docs/
+*.csv

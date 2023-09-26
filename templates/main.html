@@ -5,6 +5,16 @@
     <link rel="stylesheet" href="/static/css/style.css" />
   </head>
   <body>
+    <div class="topnav">
+      <a id="active-nav">Home</a>
+      <a href="/gezocht">Gezocht</a>
+      <a href="/contact">Contact</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a id="right-nav" href="/insturen">Antwoorden insturen</a>
+    </div>
+
+    <hr id="navline" />
+
     <div class="fieldset-container">
       <fieldset>
         <legend>Menu</legend>
@@ -22,9 +32,6 @@
           <option value="likes">Likes</option>
           <option value="datum">Datum</option>
         </select>
-
-        <br /><br />
-        <input type="button" id="antw-insturen" value="Antwoorden insturen" />
       </fieldset>
 
       <fieldset>
@@ -162,9 +169,6 @@
         <legend>Methode</legend>
         <i>Selecteer eerst een vak</i>
       </fieldset>
-    </div>
-    <div class="curved-background">
-      <div class="curved-background__curved"></div>
     </div>
 
     <!-- prettier-ignore -->
