@@ -11,15 +11,26 @@ body {
 }
 
 fieldset {
-  background-color: #f3f3f3;
   flex: 1;
   max-width: 500px;
   padding: 16px;
+  background-color: #f3f3f3;
+}
+
+fieldset div {
+  white-space: nowrap;
 }
 
 .double-fieldset {
-  flex: 2;
   display: flex;
+  flex: 2;
+}
+
+@media screen and (max-width: 335px) {
+  /* Wrap vakken if they are 330px or less */
+  .double-fieldset {
+    flex-wrap: wrap;
+  }
 }
 
 .double-fieldset-column {
@@ -68,4 +79,14 @@ legend {
   border: 1.5px solid black;
   margin: 0;
   margin-bottom: 8px;
+}
+
+/* Menu */
+#zoek-op {
+  width: 100%;
+}
+
+#sorteer-op {
+  margin-left: 4px;
+  /*width: calc(100% - ...);*/
 }
