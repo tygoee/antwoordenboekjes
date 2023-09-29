@@ -1,13 +1,13 @@
 {
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
-  "C_Cpp.default.includePath": ["/usr/include"],
+  "C_Cpp.default.includePath": [
+    "/usr/include"
+  ],
   "C_Cpp.default.compilerPath": "/usr/bin/g++",
-
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
-    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.out && $dir$fileNameWithoutExt.out",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.out -g -I$dir && $dir$fileNameWithoutExt.out",
   },
-
   "files.associations": {
     "iostream": "cpp",
     "ostream": "cpp",
@@ -94,6 +94,7 @@
     "cfenv": "cpp",
     "cinttypes": "cpp",
     "typeindex": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "*.ipp": "cpp"
   },
 }
