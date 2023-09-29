@@ -44,13 +44,16 @@ legend {
 }
 
 /* Navigation bar */
-.topnav {
+nav {
   background-color: #ffffff;
   overflow: hidden;
   color: black;
+
+  border-bottom: 2px solid black;
+  margin-bottom: 8px;
 }
 
-.topnav a {
+nav a {
   float: left;
   text-align: center;
   padding: 2px 10px;
@@ -58,11 +61,11 @@ legend {
   font-size: 17px;
 }
 
-.topnav a:not(.active-nav) {
+nav a:not(.active-nav) {
   color: black;
 }
 
-.topnav a:hover:not(.active-nav) {
+nav a:hover:not(.active-nav) {
   background-color: #ddd;
 }
 
@@ -73,12 +76,6 @@ legend {
 
 #right-nav {
   float: right;
-}
-
-#navline {
-  border: 1.5px solid black;
-  margin: 0;
-  margin-bottom: 8px;
 }
 
 /* Menu */
