@@ -16,7 +16,8 @@ MuPDF:
   sudo apt-get install build-essential cmake zlib1g-dev libfreetype6-dev libjpeg-dev libopenjp2-7-dev libcairo2-dev libturbojpeg0-dev pkg-config libglu1-mesa-dev libx11-dev libxi-dev libxrandr-dev
   ```
 
-- Extract the file using `tar -xf <file>` compile using `make` and `make install`
+- Extract the file using `tar -xf <file>`
+- compile using `make` and `make install`
 
 Crow:
 
