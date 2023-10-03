@@ -17,7 +17,8 @@ MuPDF:
   ```
 
 - Extract the file using `tar -xf <file>`
-- compile using `make` and `make install`
+- CD into the install directory
+- Compile using `make` and `sudo make install`
 
 Crow:
 
@@ -32,5 +33,6 @@ git clone https://github.com/tygoee/antwoordenboekjes
 cd antwoordenboekjes
 cmake .
 make
+cd server
 ./server.out
 ```

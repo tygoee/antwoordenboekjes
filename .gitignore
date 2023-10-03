@@ -31,7 +31,7 @@
 *.out
 *.app
 
-# CMake
+# CMake files
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
@@ -44,6 +44,6 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-# Documents and csv files
-docs/
-*.csv
+# Documents and document index
+server/docs/
+server/db/

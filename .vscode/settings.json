@@ -7,7 +7,7 @@
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.out -g -I$dir && $dir$fileNameWithoutExt.out",
-    "cpp": "cd $dir && cmake . -Dfile=$fileName -Dout=$fileNameWithoutExt.out && make && $dir$fileNameWithoutExt.out"
+    "cpp": "cd $(python3.11 -c \"print(__import__('os').getcwd())\") && cmake . -Dfile=$fileName -Dout=$fileNameWithoutExt.out && make && cd $dir && $dir$fileNameWithoutExt.out"
   },
   "files.associations": {
     "iostream": "cpp",
