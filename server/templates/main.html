@@ -19,7 +19,7 @@
     <!-- <hr id="navline" /> -->
 
     <div class="fieldset-container">
-      <fieldset>
+      <fieldset id="menu">
         <legend>Menu</legend>
 
         <label for="zoek-op">Zoek op</label>
@@ -36,7 +36,7 @@
         </select>
       </fieldset>
 
-      <fieldset>
+      <fieldset id="niveau">
         <legend>Niveau</legend>
         <div>
           <input type="checkbox" name="niveau" id="vwo" value="vwo" />
@@ -64,7 +64,7 @@
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset id="leerjaar">
         <legend>Leerjaar</legend>
         <div>
           <input type="checkbox" name="leerjaar" id="klas-1" value="klas-1" />
@@ -96,7 +96,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="vak double-fieldset">
+      <fieldset id="vak" class="double-fieldset">
         <legend>Vak</legend>
         <div class="double-fieldset-column">
           <div>
@@ -167,14 +167,16 @@
           </div>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset id="methode">
         <legend>Methode</legend>
         <i>Selecteer eerst een vak</i>
       </fieldset>
     </div>
 
+    <p id="body-text"></p>
+
     <!-- prettier-ignore -->
-    <script id="vakken" type="application/json">{{ vakken }}</script>
+    <script id="vakken" src="/static/json/vakken.json" type="application/json">{{ vakken }}</script>
     <script src="/static/js/script.js"></script>
   </body>
 </html>

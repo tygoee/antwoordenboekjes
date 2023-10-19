@@ -7,7 +7,7 @@
 using std::ifstream, std::string, std::stringstream, std::vector;
 
 namespace csv {
-/*
+/**
  * Simply loads a csv file (Doesn't look for escaped apostrophes)
  @param filename The filename to the csv file
  @returns A vector in the format of `{ { cell, cell }, { cell, cell } }`
@@ -54,8 +54,9 @@ vector<vector<string>> load_csv(string filename) {
     return table;
 }
 
-/*
+/**
  * Returns a string based on the table
+ @param table A vector table
  @param open Opening bracket
  @param close Closing bracket
  @param whitespaces When true, this also adds
@@ -66,10 +67,15 @@ vector<vector<string>> load_csv(string filename) {
 string table_string(vector<vector<string>> table,
                     char open = '{',
                     char close = '}',
-                    bool whitespaces = true) {
+                    bool whitespaces = false) {
     // Convert open and close to strings
     const string space = whitespaces ? " " : "";
     const int erase_pos = whitespaces ? -2 : -1;
+
+    // Return open + close if the table has 0 rows
+    if (table.size() == 0) {
+        return string(1, open) + string(1, close);
+    }
 
     // The result of what this function returns
     stringstream result;

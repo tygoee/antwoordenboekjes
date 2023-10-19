@@ -98,6 +98,9 @@ int main(int argc, char const* argv[]) {
         // Search the data for matching_values values
         vector<vector<string>> matching_values;
 
+        // This doesn't work correctly at all, it
+        // selects values if only 1 is true and has
+        // other unexpected behavior
         for (auto&& [param, param_values] : multi_params) {
             // Get the boeken_h index of param
             vector<string>::const_iterator it = std::find(boeken_h.begin(), boeken_h.end(), param);
@@ -110,15 +113,21 @@ int main(int argc, char const* argv[]) {
 
             // Add rows to the matching_values rows
             for (const vector<string> row : boeken) {
-                for (string param_value : param_values) {
+                for (const string param_value : param_values) {
+                    const int elementidx = std::find(matching_values.begin(),
+                                                     matching_values.end(),
+                                                     row) != matching_values.end();
+
                     // If row[idx] is param_value and it
                     // isn't already in matching_values,
                     // add the row to matching_values
-                    if (row[idx] == param_value &&
-                        !(std::find(matching_values.begin(),
-                                    matching_values.end(),
-                                    row) != matching_values.end())) {
+                    if (row[idx] == param_value && !elementidx) {
                         matching_values.push_back(row);
+                    } else if (row[idx] != param_value && elementidx) {
+                        // If it's found but doesn't match,
+                        // rm the element from matching_values
+                        // (doesn't work somehow)
+                        matching_values.erase(matching_values.begin() + elementidx);
                     }
                 }
             }

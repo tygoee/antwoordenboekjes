@@ -1,3 +1,6 @@
+> **Note**  
+> _Archived as I was thinking a bit big and didn't know this was gonna take so long. Also I don't think I would've ever put it online because of copyright issues :)_
+
 # Antwoordenboekjes
 
 Dit is een website waar ik antwoordenboekjes op zet.
@@ -6,7 +9,7 @@ De documenten staan niet op github, alleen de code
 
 ## Libraries
 
-MuPDF:
+MuPDF **_Mupdf wasn't used, I planned to use it but hadn't yet implemented it_**: <s>
 
 - Go to the [releases page](https://mupdf.com/releases/index.html)
 - Download the latest tar.gz file
@@ -18,7 +21,7 @@ MuPDF:
 
 - Extract the file using `tar -xf <file>`
 - CD into the install directory
-- Compile using `make` and `sudo make install`
+- Compile using `make` and `sudo make install` </s>
 
 Crow:
 
